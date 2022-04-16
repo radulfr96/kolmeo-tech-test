@@ -6,10 +6,10 @@ namespace DataLayer.Contracts
     {
         public Task AddProductAsync(Product product);
 
-        public Task DeleteProduct(Product author);
+        public Task DeleteProductAsync(Product author);
 
-        public Task<Product> GetProduct(int id);
+        public Task<Product> GetProductAsync(int id);
 
-        public Task<List<Product>> GetProducts();
+        public Task<List<Product>> GetProductsAsync();
     }
 }

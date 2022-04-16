@@ -23,18 +23,18 @@ namespace DataLayer
             await _context.Products.AddAsync(product);
         }
 
-        public async Task DeleteProduct(Product author)
+        public async Task DeleteProductAsync(Product author)
         {
             await Task.FromResult(_context.Products.Remove(author));
         }
 
-        public async Task<Product> GetProduct(int id)
+        public async Task<Product> GetProductAsync(int id)
         {
             return await _context.Products
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
 
-        public async Task<List<Product>> GetProducts()
+        public async Task<List<Product>> GetProductsAsync()
         {
             return await _context.Products.ToListAsync();
         }

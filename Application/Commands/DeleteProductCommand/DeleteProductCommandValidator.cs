@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Queries.GetProductQuery
+namespace Application.Commands.DeleteProductCommand
 {
-    public class GetProductQueryValidator : AbstractValidator<GetProductQuery>
+    public class DeleteProductCommandValidator : AbstractValidator<DeleteProductCommand>
     {
-        public GetProductQueryValidator()
+        public DeleteProductCommandValidator()
         {
             RuleFor(c => c.Id).GreaterThan(0);
         }

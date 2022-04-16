@@ -4,18 +4,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnitOfWork.Contracts;
 
 namespace Application.Queries.GetProductQuery
 {
     public class GetProductQuery : IRequest<GetProductQueryResponse>
     {
+        public int Id { get; set; }
     }
 
     public class GetProductQueryHandler : IRequestHandler<GetProductQuery, GetProductQueryResponse>
     {
-        public Task<GetProductQueryResponse> Handle(GetProductQuery request, CancellationToken cancellationToken)
+        private readonly IProductUnitofWork _productUnitofWork;
+
+        public GetProductQueryHandler(IProductUnitofWork productUnitofWork)
         {
-            throw new NotImplementedException();
+            _productUnitofWork = productUnitofWork;
+        }
+
+        public async Task<GetProductQueryResponse> Handle(GetProductQuery query, CancellationToken cancellationToken)
+        {
+            var response = new GetProductQueryResponse();
+
+            var product = await _productUnitofWork.ProductDataLayer.GetProductAsync(query.Id);
+
+            if (product == null)
+            {
+                throw new Exception();
+            }
+
+            response.Product = product;
+
+            return response;
         }
     }
 }

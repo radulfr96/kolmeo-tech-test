@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnitOfWork.Contracts;
 
 namespace Application.Queries.GetProdutsQuery
 {
@@ -13,9 +14,19 @@ namespace Application.Queries.GetProdutsQuery
 
     public class GetProductsQueryHandler : IRequestHandler<GetProductsQuery, GetProductsQueryResponse>
     {
-        public Task<GetProductsQueryResponse> Handle(GetProductsQuery request, CancellationToken cancellationToken)
+        private readonly IProductUnitofWork _productUnitofWork;
+
+        public GetProductsQueryHandler(IProductUnitofWork productUnitofWork)
         {
-            throw new NotImplementedException();
+            _productUnitofWork = productUnitofWork;
+        }
+
+        public async Task<GetProductsQueryResponse> Handle(GetProductsQuery request, CancellationToken cancellationToken)
+        {
+            return new GetProductsQueryResponse()
+            {
+                Products = await _productUnitofWork.ProductDataLayer.GetProductsAsync()
+            };
         }
     }
 }
