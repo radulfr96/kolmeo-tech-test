@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Domain.Exceptions;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +31,7 @@ namespace Application.Commands.DeleteProductCommand
 
             if (product == null)
             {
-                throw new Exception();
+                throw new ProductNotFoundException($"Unable to find product with id [{command.Id}]");
             }
 
             await _productUnitofWork.ProductDataLayer.DeleteProductAsync(product);

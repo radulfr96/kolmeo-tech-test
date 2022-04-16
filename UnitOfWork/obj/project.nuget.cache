@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "k0v/wLICB7ZLlpT2QhY0lyf+X37ePHjMnsnS1mGQO0BXfT+VNJqnVo5UcIwEab7MN5QZyc40hszfRPEdaFrMOA==",
+  "dgSpecHash": "i8u7LDq2r9XtnBS+TEwBrSGiQ1lm05sT+w3fE9bGlrZuyOnlIiClO6X1hnS8wAXtRxbg0Md6h1BfY5g5dojS/A==",
   "success": true,
   "projectFilePath": "D:\\Projects\\kolmeo-tech-test\\UnitOfWork\\UnitOfWork.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\wados\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
     "C:\\Users\\wados\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.4\\microsoft.entityframeworkcore.6.0.4.nupkg.sha512",
     "C:\\Users\\wados\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.4\\microsoft.entityframeworkcore.abstractions.6.0.4.nupkg.sha512",
     "C:\\Users\\wados\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.4\\microsoft.entityframeworkcore.analyzers.6.0.4.nupkg.sha512",

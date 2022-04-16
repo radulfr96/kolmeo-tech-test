@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using Domain.Enums;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace Application.Commands.DeleteProductCommand
     {
         public DeleteProductCommandValidator()
         {
-            RuleFor(c => c.Id).GreaterThan(0);
+            RuleFor(c => c.Id).GreaterThan(0).WithErrorCode(ErrorCodeEnum.ProductIdInvalidValue.ToString());
         }
     }
 }

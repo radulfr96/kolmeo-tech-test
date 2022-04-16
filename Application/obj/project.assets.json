@@ -252,6 +252,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "FluentValidation": "10.4.0",
           "Microsoft.EntityFrameworkCore": "6.0.4"
         },
         "compile": {

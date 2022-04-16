@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer.Contracts", "Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWork.Contracts", "UnitOfWork.Contracts\UnitOfWork.Contracts.csproj", "{04CA2048-8C75-43E9-BD40-6060552F636A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.UnitTest", "Application.UnitTest\Application.UnitTest.csproj", "{C7B0B7BA-12D1-450B-A3F7-9356ED51F90F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.IntegrationTest", "Application.IntegrationTest\Application.IntegrationTest.csproj", "{BD7B8524-62AA-40C7-9AB3-A3EC7110DC3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{04CA2048-8C75-43E9-BD40-6060552F636A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04CA2048-8C75-43E9-BD40-6060552F636A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04CA2048-8C75-43E9-BD40-6060552F636A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7B0B7BA-12D1-450B-A3F7-9356ED51F90F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B0B7BA-12D1-450B-A3F7-9356ED51F90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B0B7BA-12D1-450B-A3F7-9356ED51F90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B0B7BA-12D1-450B-A3F7-9356ED51F90F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD7B8524-62AA-40C7-9AB3-A3EC7110DC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD7B8524-62AA-40C7-9AB3-A3EC7110DC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD7B8524-62AA-40C7-9AB3-A3EC7110DC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD7B8524-62AA-40C7-9AB3-A3EC7110DC3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
