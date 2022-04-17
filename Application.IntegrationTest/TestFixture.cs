@@ -8,7 +8,7 @@ using UnitOfWork.Contracts;
 using UnitOfWork;
 using Application.Commands.AddProductCommand;
 
-namespace Application.IntegrationTests
+namespace Application.IntegrationTest
 {
     public class TestFixture
     {

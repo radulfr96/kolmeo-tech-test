@@ -8,6 +8,7 @@ using Xunit;
 
 namespace Application.UnitTest
 {
+    [Collection("UnitTestCollection")]
     public class AddProductCommandTest
     {
         private readonly AddProductCommandValidator _validator;

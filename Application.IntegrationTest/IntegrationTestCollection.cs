@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Application.IntegrationTests
+namespace Application.IntegrationTest
 {
     [CollectionDefinition("IntegrationTestCollection")]
     public class IntegrationTestCollection : ICollectionFixture<TestFixture>
