@@ -45,7 +45,7 @@ namespace KolmeoTestAPI
 
         private void HandleException(ExceptionContext context)
         {
-            Type type = context.Exception.GetType();
+            Type type = context.Exception.GetType().BaseType;
 
             if (_exceptionHandlers.ContainsKey(type))
             {

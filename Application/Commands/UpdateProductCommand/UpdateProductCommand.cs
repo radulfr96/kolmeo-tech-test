@@ -42,6 +42,8 @@ namespace Application.Commands.UpdateProductCommand
             product.Description = command.Description;
             product.Price = command.Price;
 
+            await _productUnitofWork.SaveAsync();
+
             return response;
         }
     }
